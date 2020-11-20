@@ -9,42 +9,73 @@ import patrick_pic from './images/image-patrick.jpg'
 
 const useStyle = makeStyles((theme) => ({
   box_one:{
-  border: 'solid 2px blue',
+  
   width:'60%',
   height: '40vh',
   marginRight: '2%',
   background: 'hsl(263, 55%, 52%)',
-  color:'hsl(0, 0%, 100%)'
+  color:'hsl(0, 0%, 100%)',
+  [theme.breakpoints.down('xs')]:{
+    
+    width:'97%',
+    height:'46vh',
+    marginBottom:'2%'
+  }
+
     
   },
   box_two:{
     width: '22%',
     height: '40vh',
-    border: 'solid 2px blue',
+    
     background:'hsl(217, 19%, 35%)',
-    color:'hsl(0, 0%, 100%)'
+    color:'hsl(0, 0%, 100%)',
+    [theme.breakpoints.down('xs')]:{
+      
+      width:'97%',
+      height:'28vh',
+      marginBottom:'2%'
+    }
 
   },
   box_three:{
   width: '22%',
   height: '40vh',
-  border: 'solid 2px blue',
+  
   margin: '0% 2%',
-  background:'hsl(0, 0%, 100%)'
+  background:'hsl(0, 0%, 100%)',
+  [theme.breakpoints.down('xs')]:{
+    
+    width:'96%',
+    height:'28vh',
+    marginBottom: '3%',
+
+   
+
+  }
   },
   box_four:{
-    border: 'solid 2px blue',
+    
     width: '60%',
     height: '40vh',
     background:'hsl(219, 29%, 14%)',
-    color:'hsl(0, 0%, 100%)'
+    color:'hsl(0, 0%, 100%)',
+    [theme.breakpoints.down('xs')]:{
+      border:'solid 2px blue',
+      width:'99%',
+    
+    }
   },
   box_five:{
-  border: 'solid 2px blue',
+  
   width: '100%',
   height: '83.5vh',
   marginTop: '4%',
-  background:'hsl(0, 0%, 100%)'
+  background:'hsl(0, 0%, 100%)',
+  [theme.breakpoints.down('xs')]:{
+    
+    height:'50vh'
+  }
   }
 
 }))

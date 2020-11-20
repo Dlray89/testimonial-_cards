@@ -1,17 +1,31 @@
 .mainContainer {
-  border: solid 2px blue;
+  
   display: flex;
   justify-content: space-evenly;
   padding: 3%;
   margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+@media(max-width: 500px){
+  .mainContainer {
+    flex-direction: column;
+  }
 }
 
 .firstContainer {
   
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 
+}
+
+@media(max-width: 500px){
+  .firstContainer {
+    
+  }
 }
 
 .container1 {
@@ -20,13 +34,17 @@
   justify-content: flex-end;
   width: 98%;
   padding: 1%;
+}
 
-
-  
+@media(max-width: 500px){
+  .container1 {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .box_one {
-  border: solid 2px blue;
+  
   width:60%;
   height: 40vh;
   margin-right: 2%;
@@ -83,7 +101,7 @@
 .box_two {
   width: 22%;
   height: 40vh;
-  border: solid 2px blue;
+  
 }
 
 .introbox {
@@ -128,26 +146,41 @@
   padding: 1%;
 }
 
+@media(max-width: 500px){
+  .container2 {
+    flex-direction: column;
+    width: 97%;
+    justify-content: start;
+    
+  }
+}
+
 .box_three {
   width: 22%;
   height: 40vh;
-  border: solid 2px blue;
+ 
   margin: 0% 2%;
 }
 
 .box_four {
-  border: solid 2px blue;
+  
   width:60%;
   height: 40vh;
 }
 
 .secondary_container {
- 
+  padding-right: 13%;
   width: 20%;
 }
 
+@Media(max-width: 500px){
+  .secondary_container {
+    width: 100%;
+  }
+}
+
 .box_five {
-  border: solid 2px blue;
+  
   width: 100%;
   height: 83.5vh;
   margin-top: 4%;
