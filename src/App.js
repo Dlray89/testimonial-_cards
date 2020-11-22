@@ -6,6 +6,7 @@ import Jeanette_pic from './images/image-jeanette.jpg'
 import Jonathan_pic from './images/image-jonathan.jpg'
 import kira_pic from './images/image-kira.jpg'
 import patrick_pic from './images/image-patrick.jpg'
+import quotes from './images/bg-pattern-quotation.svg'
 
 const useStyle = makeStyles((theme) => ({
   box_one:{
@@ -14,11 +15,16 @@ const useStyle = makeStyles((theme) => ({
   height: '40vh',
   marginRight: '2%',
   background: 'hsl(263, 55%, 52%)',
+  backgroundImage:'url('+ quotes +')',
   color:'hsl(0, 0%, 100%)',
+  backgroundRepeat:'no-repeat',
+  backgroundPosition:'right',
+  backgroundPositionY:'5%',
+  backgroundPositionX:'75%',
   [theme.breakpoints.down('xs')]:{
     
     width:'97%',
-    height:'46vh',
+    height:'41vh',
     marginBottom:'2%'
   }
 
@@ -61,8 +67,8 @@ const useStyle = makeStyles((theme) => ({
     background:'hsl(219, 29%, 14%)',
     color:'hsl(0, 0%, 100%)',
     [theme.breakpoints.down('xs')]:{
-      border:'solid 2px blue',
       width:'99%',
+      height:'69vh'
     
     }
   },
@@ -74,7 +80,8 @@ const useStyle = makeStyles((theme) => ({
   background:'hsl(0, 0%, 100%)',
   [theme.breakpoints.down('xs')]:{
     
-    height:'50vh'
+    height:'55vh',
+    boxSizing:'border-box'
   }
   }
 
