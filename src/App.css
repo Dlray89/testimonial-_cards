@@ -12,6 +12,7 @@
 @media(max-width: 500px){
   .mainContainer {
     flex-direction: column;
+    overflow-x: hidden
 
   }
 }
