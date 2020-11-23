@@ -10,21 +10,22 @@ import quotes from './images/bg-pattern-quotation.svg'
 
 const useStyle = makeStyles((theme) => ({
   box_one:{
-  
   width:'60%',
-  height: '40vh',
+  
   marginRight: '2%',
   background: 'hsl(263, 55%, 52%)',
   backgroundImage:'url('+ quotes +')',
+  
   color:'hsl(0, 0%, 100%)',
+  borderRadius:'10px',
   backgroundRepeat:'no-repeat',
   backgroundPosition:'right',
   backgroundPositionY:'5%',
   backgroundPositionX:'75%',
+  boxShadow:'4px 5px 10px black',
   [theme.breakpoints.down('xs')]:{
     
     width:'97%',
-    height:'41vh',
     marginBottom:'2%'
   }
 
@@ -32,28 +33,28 @@ const useStyle = makeStyles((theme) => ({
   },
   box_two:{
     width: '22%',
-    height: '40vh',
-    
+    borderRadius:'10px',
+
     background:'hsl(217, 19%, 35%)',
     color:'hsl(0, 0%, 100%)',
+    boxShadow:'4px 5px 10px black',
     [theme.breakpoints.down('xs')]:{
       
       width:'97%',
-      height:'28vh',
       marginBottom:'2%'
     }
 
   },
   box_three:{
   width: '22%',
-  height: '40vh',
-  
+  borderRadius:'10px',
+
   margin: '0% 2%',
   background:'hsl(0, 0%, 100%)',
+  boxShadow:'4px 5px 10px black',
   [theme.breakpoints.down('xs')]:{
     
-    width:'96%',
-    height:'28vh',
+    width:'98%',
     marginBottom: '3%',
 
    
@@ -61,26 +62,26 @@ const useStyle = makeStyles((theme) => ({
   }
   },
   box_four:{
-    
+    borderRadius:'10px',
+
     width: '60%',
-    height: '40vh',
     background:'hsl(219, 29%, 14%)',
     color:'hsl(0, 0%, 100%)',
+    boxShadow:'4px 5px 10px black',
     [theme.breakpoints.down('xs')]:{
       width:'99%',
-      height:'69vh'
     
     }
   },
   box_five:{
-  
+    borderRadius:'10px',
+
   width: '100%',
-  height: '83.5vh',
   marginTop: '4%',
   background:'hsl(0, 0%, 100%)',
+  boxShadow:'4px 5px 10px black',
   [theme.breakpoints.down('xs')]:{
     
-    height:'55vh',
     boxSizing:'border-box'
   }
   }
@@ -96,7 +97,7 @@ function App() {
 
       <div className='container1'>
       <Card className={classes.box_one}>
-      <CardHeader  
+      <CardHeader style={{}}  
     avatar={
       <Avatar aria-aria-label='name' className='avatar'>
         <img  src={danial_pic} />
@@ -106,13 +107,12 @@ function App() {
     subheader='Verified Graduate'
     subheaderTypographyProps={{color:'hsl(0, 0%, 100%)'}}
     />
-    <CardContent>
+
+    <CardContent style={{marginTop:'0%', padding:'2%', boxSizing:'border-box'}}>
         <p className='box_one_text'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        </p>
+        I recieved a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I Honestly feel I got every penny's worth.</p>
         <p className='box_one_text2'>
-        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        </p>
+        'I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing exoeriences here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most gueling time - of my life. Since completing the course. I've successfully switched careers, working as a Software Engineer at a VR startup.'</p>
     </CardContent>
         
 
@@ -131,14 +131,14 @@ function App() {
     subheader='Verified Graduate'
     subheaderTypographyProps={{color:'white'}}
     />
-    <CardContent>
+    <CardContent style={{marginTop:'0%', padding:'2%', boxSizing:'border-box'}}>
       <p className='box_two_text'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      The team was very supportive and lept me motivated
       </p>
 
       <p className='box_two_text2'>
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.''
-      </p>
+      '
+      I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself.'</p>
     </CardContent>
 
 </Card>
@@ -155,13 +155,12 @@ function App() {
     title='Patrick Abrams '
     subheader='Verified Graduate'
     />
-    <CardContent>
+    <CardContent style={{marginTop:'0%', padding:'2%', boxSizing:'border-box'}}>
       <p className='box_three_text'>
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        An overall wonderful and rewarding experience
       </p>
       <p className='box_three_text2'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      'Thank you for the wonderful experience! I now habe a job I really enjoy and make a good living while doing something I love.'</p>
     </CardContent>
     
 
@@ -178,10 +177,10 @@ function App() {
     subheader='Verified Graduate'
     subheaderTypographyProps={{color:'white'}}
     />
-    <CardContent>
+    <CardContent style={{marginTop:'0%', padding:'2%', boxSizing:'border-box'}}>
      
-      <p className='box_four_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam sit amet nisl suscipit. In hendrerit gravida rutrum quisque non tellus orci ac auctor</p>
-      <p className='box_four_text2'>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo. Facilisi nullam vehicula ipsum a arcu cursus vitae. A arcu cursus vitae congue. Feugiat in ante metus dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.'</p>
+      <p className='box_four_text'>Awesome teaching support from TAs who did bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</p>
+       <p className='box_four_text2'>'The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.'</p>
     </CardContent>
 
   </Card>
@@ -201,12 +200,9 @@ function App() {
         subheader='Verified Gradute' 
         
         />
-        <CardContent>
-          <p className='box_five_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-          <p className='box_five_text2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet. Diam volutpat commodo sed egestas egestas fringilla. Vitae turpis massa sed elementum tempus. Nunc sed blandit libero volutpat sed cras ornare arcu dui. Lorem donec massa sapien faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Tristique senectus et netus et malesuada fames ac turpis.
-          </p>
+        <CardContent style={{marginTop:'0%', padding:'2%', boxSizing:'border-box'}}>
+          <p className='box_five_text'>Such a life-changing experience. Highly recommended!</p>
+          <p className='box_five_text2'>'Before joining the bootcamp, I've never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I've often referred to it during interviews as an example of my development experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!'</p>
         </CardContent>
        
       </Card>
